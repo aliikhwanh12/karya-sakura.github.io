@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+
+@font-face {
+    font-family: dkbrushcrush;
+    src: url(page/Bahan/DK\ Brush\ Crush.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bbf;
+    z-index: 12;
+    position: fixed;
+}
+
+.karyasakura img {
+    height: 40px;
+    width: 40px;
+    padding: 8px 0px 8px 28px;
+}
+
+.karyasakura {
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    background-color: #007bbf;
+}
+
+.karyasakura span {
+    padding-left: 18px;
+}
+
+.karyasakura::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul {
+    cursor: default;
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    display: inline-block;
+    padding: 18px 2px;
+    margin: 0px 10px;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    opacity: 0.6;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+span.arrowbtn{
+    display: flex;
+
+    padding-left: 7px;
+    display: inline-block;
+}
+i.arrow-down{
+    vertical-align: middle;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown-content {
+    display: none;
+    padding-bottom: 28px;
+    position: absolute;
+    top: 55px;
+    background-color: #007bbf;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 55%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    width: 188px;
+    margin-top: 20px;
+    padding: 0px 12px 0px 32px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    opacity: 0.6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+svg.search{
+    vertical-align: middle;
+    fill: white;
+    height: 24px;
+    width: 24px;
+    stroke-width: 2px;
+}
+@media all and (max-width: 1160px) {
+    ul li {
+        margin: 0px 5px;
+    }
+    .s3atas{
+        margin: 24px 80pt 60px;
+    }
+    .s3bawah{
+        margin: 24px 80pt 60px;
+    }
+}
+/*HEADER*/
+.header {
+    width: 100%;
+    height: 430px;
+    position: fixed;
+    background-image: url(page/Bahan/HTESs.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header h1 {
+    letter-spacing: 3px;
+    margin-top: 173px;
+    display: flex;
+    color: #fdfbfc;
+    font-size: 90px;
+    font-family: 'dkbrushcrush';
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    display: table;
+    position: relative;
+    table-layout: fixed;
+}
+
+.s1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: white;
+    height: fit-content;
+    color: #4187F6;
+}
+
+.s1 h4 {
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.s1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 42px 0px;
+}
+
+.s1 .disclaimer {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top;
+}
+
+.s1 .disclaimer img {
+    height: 168px;
+    width: 168px;
+}
+
+.s1 .disclaimer .dsc-content p {
+    padding: 22px 0px;
+}
+
+.s2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: #4187F6;
+    height: fit-content;
+    color: white;
+}
+
+.s2 h4 {
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.s2 .s2isi {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s2 .s2isi .s2isikiri {
+    padding: 0px 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.38;
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 127px;
+    width: 542.5px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    word-wrap: break-word;
+}
+
+.s2 .s2isi .container {
+    font-family: "Mukta", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.s2 .s2isi .container button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #4187f6;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #4187f6;
+    border-right: 0.125rem solid #4187f6;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #4187f6;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #4187f6;
+}
+
+.s2 img {
+    padding: 0px 14px;
+    height: 269px;
+    width: 562px;
+}
+
+.s3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: white;
+    height: fit-content;
+    color: #4187F6;
+}
+
+.s3 h4 {
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.s3atas {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 180pt 24px;
+    vertical-align: top;
+}
+
+.s3bawah {
+    display: flex;
+    justify-content: space-around;
+    margin: 24px 180pt 60px;
+    vertical-align: top;
+}
+
+div.tombol {
+    width: fit-content;
+    background-color: #f4f4f4;
+    padding: 48px;
+    border-radius: 10px;
+}
+
+div.tombol a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 3em;
+    margin: -3em;
+    text-decoration: none;
+    box-shadow: 0px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+svg.icon {
+    display: block;
+    height: 65px;
+    width: 65px;
+    fill: #bbbbbb;
+    background-clip: border-box;
+    transition: fill 0.3s;
+}
+
+p.temakarya {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bbbbbb;
+    padding-top: 25px;
+    font-size: 16px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+div.tombol a:hover svg.icon {
+    fill: #4187F6;
+}
+
+div.tombol a:hover p.temakarya {
+    color: #4187F6;
+}
+
+div.tombol a:hover {
+    box-shadow: 0 0px 10px 0 gainsboro;
+}
+
+footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: #4187F6;
+    height: fit-content;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.footeratas,
+.footerbawah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-social-icons {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+p>.social-icon:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1% 0 1% 0;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+
+._14 {
+    font-size: 1.4em;
+}
+
+ul.social-icons {
+    margin-top: -8px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #4187f6;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-instagram {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #4187f6;
+}
+
+.fa-instagram:hover {
+    background-color: #8200ed;
+}
+
+.fa-youtube {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #4187f6;
+}
+
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+.credit{
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-top: 30px;
+}
